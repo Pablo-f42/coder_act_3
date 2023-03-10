@@ -1,21 +1,33 @@
 
 
-$tex_primary: (
-    font-family: nunito sans, sans-serif,
-    font-weight: 900,
-    font-size: 3.5rem );
+$tex_nun: (
+    "nunito sans", sans-serif
+);
 
-$tex_secondary: (
-    font-family: nunito sans, sans-serif,
-    font-weight: 600,
-    font-size: 1.7rem );
+$tex_wei_black: (
+    900
+);
 
-$tex_pharagraph: (
-    font-family: nunito sans, sans-serif,
-    font-weight: 400,
-    font-size: 1.7rem );
+$tex_wei_bold: (
+    600
+);
 
-$tex_emphasis: (
-    font-family: nunito sans, sans-serif,
-    font-weight: 4¡100,
-    font-size: 1.3rem );
+$tex_wei_regular: (
+    400
+);
+
+$tex_wei_light: (
+    200
+);
+
+$tex_hard: (
+    3.5rem
+);
+
+$tex_medium: (
+    1.7rem
+);
+
+$tex_small: (
+    1.3rem
+);

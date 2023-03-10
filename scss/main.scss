@@ -1,44 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;900&display=swap');
+@import "reset";
 @import "colors";
 @import "fonts";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;900&display=swap');
-
-
-body {background-color: rgb(233, 245, 248);}
-
-html {
-    font-size: 62.5%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    font-family: nunito sans, sans-serif;
-}
-
-h1 {
-    font-weight: 900;
-    font-size: 3.5rem;
-
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 1.6rem;
-    
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.7rem;
-    
-}
-
 .menu {
-    background-color: #570000;
+    background-color: $co_primary;
 
 }
 
@@ -52,11 +19,11 @@ p {
 .list-menu {
     
     width: 600px;
-    font-family: nunito sans, sans-serif;
+    font-family: $tex_nun;
+    font-weight: $tex_wei_regular;
+    font-size: $tex_medium;
     list-style-type: none ;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #efefef; 
+    color: $co_secondary; 
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -85,7 +52,7 @@ p {
   }
 
 .hero {
-    background-image: url(./img/HERO_BKG.jpg);
+    background-image: radial-gradient(circle at center, #ff0000, $co_primary);
     height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,10 +134,17 @@ p {
 }
 
 .hero-info {
-    color: white;
+    font-family: $tex_nun;
+    font-weight: $tex_wei_black;
+    font-size: $tex_hard;
+    color: $co_secondary;
 }
 
 .hero-info-p {
+    font-family: $tex_nun;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_medium;
+    color: $co_secondary;
     width: 500px;
 }
 
