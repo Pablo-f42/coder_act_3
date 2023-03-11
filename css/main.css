@@ -149,6 +149,22 @@ h1 h2 h3 {
   color: #f3f3f3;
 }
 
+.hero-h2 {
+  font-family: "nunito sans", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #252525;
+}
+
+.hero-info-home {
+  font-family: "nunito sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #f3f3f3;
+  width: 500px;
+  margin-bottom: 30px;
+}
+
 .hero-info-p {
   font-family: "nunito sans", sans-serif;
   font-weight: 600;
@@ -343,6 +359,13 @@ h1 h2 h3 {
   width: 500px;
   margin: 0 auto;
   padding: 30px;
+}
+
+.form-input {
+  font-family: "nunito sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #f3f3f3;
 }
 
 label {

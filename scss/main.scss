@@ -141,6 +141,22 @@
     color: $co_secondary;
 }
 
+.hero-h2 {
+    font-family: $tex_nun;
+    font-weight: $tex_wei_black;
+    font-size: $tex_hard;
+    color: $co_text;
+}
+
+.hero-info-home {
+    font-family: $tex_nun;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_medium;
+    color: $co_secondary;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
 .hero-info-p {
     font-family: $tex_nun;
     font-weight: $tex_wei_bold;
@@ -343,6 +359,13 @@
     margin: 0 auto;
     padding: 30px;
   }
+
+.form-input {
+    font-family: $tex_nun;
+    font-size: $tex_medium;
+    font-weight: $tex_wei_bold;
+    color: $co_secondary;
+}
   
 label {
     display: block;
