@@ -3,6 +3,7 @@
 @import "reset";
 @import "colors";
 @import "fonts";
+@import "buttons";
 
 .menu {
     background-color: $co_primary;
@@ -146,6 +147,7 @@
     font-size: $tex_medium;
     color: $co_secondary;
     width: 500px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 991px) {
@@ -155,21 +157,29 @@
     }}
 
 .button {
-    width: 200px;
-    height: 50px;
-    font-family: nunito sans, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    background-color: $cta-button-bg;
+    cursor: pointer;
+    font-family: $tex_nun;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_medium;
+    color: $cta-button-color;
+    padding: 15px 30px;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #efefef;
-    border: none;
-    background-color: #4AB824;
     border-radius: 30px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
+    transform: scale(1);
+    transition: background-color 0.5s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.5);
+      background-color: $cta-button-hover;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba($cta-button-bg, 0.5);
+    }
+  }
 
 .button-white {
     width: 250px;

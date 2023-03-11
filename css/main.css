@@ -146,6 +146,7 @@ html {
   font-size: 1.7rem;
   color: #f3f3f3;
   width: 500px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 991px) {
@@ -155,20 +156,26 @@ html {
   }
 }
 .button {
-  width: 200px;
-  height: 50px;
-  font-family: nunito sans, sans-serif;
+  background-color: #570000;
+  cursor: pointer;
+  font-family: "nunito sans", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+  font-size: 1.7rem;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #efefef;
-  border: none;
-  background-color: #4AB824;
   border-radius: 30px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  transform: scale(1);
+  transition: background-color 0.5s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.5);
+  background-color: #11dd22;
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(87, 0, 0, 0.5);
 }
 
 .button-white {
