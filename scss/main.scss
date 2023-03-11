@@ -61,7 +61,7 @@
 }
 
 .hero-hist {
-    background-image: url(./img/historia.jpg);
+    background-image: url(../img/historia.jpg);
     height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 .hero-epi {
-    background-image: url(./img/historia.jpg);
+    background-image: url(../img/historia.jpg);
     height: 40vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
 }
 
 .hero-jgo {
-    background-image: url(./img/5.gif);
+    background-image: url(../img/5.gif);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@
     font-family: $tex_nun;
     font-weight: $tex_wei_bold;
     font-size: $tex_medium;
-    color: $co_secondary;
+    color: $co_text;
     width: 500px;
     margin-bottom: 30px;
 }
@@ -167,11 +167,9 @@
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 30px;
-    transform: scale(1);
     transition: background-color 0.5s ease-in-out;
   
     &:hover {
-      transform: scale(1.5);
       background-color: $cta-button-hover;
     }
   
@@ -181,20 +179,32 @@
     }
   }
 
-.button-white {
+ .button-white {
+    background-color: transparent;
+    cursor: pointer;
+    font-family: $tex_nun;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_medium;
+    color: $co_secondary;
+    border-color: $co_secondary;
+    text-transform: uppercase;
+    text-decoration: none;
     width: 250px;
     height: 60px;
-    font-family: nunito sans, sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #efefef  ;
-    background-color: transparent;
-    border-color: #efefef;
     padding: 0;
     margin-top: 60px;
     border-radius: 30px;
-}
+    transition: background-color 0.5s ease-in-out;
+  
+    &:hover {
+      background-color: $cta-button-hover;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba($cta-button-bg, 0.5);
+    }
+} 
 
 @media (max-width: 991px) {
 .col-info{
@@ -218,7 +228,8 @@
 }
 
 .title-ia {
-    font-weight: 600;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_medium;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -274,16 +285,16 @@
 }
 
 .list-fotter {
-    font-family: nunito sans, sans-serif;
+    font-family: $tex_nun;
+    font-size: $tex_small;
+    font-weight: $tex_wei_regular;
+    color: $co_secondary;
     list-style-type:none ;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #efefef;
     padding-top: 30px;
 }
 
 .li-menu-r {
-    color: #efefef;
+    color: $co_secondary;
     text-decoration: none;
 }
 
@@ -291,6 +302,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 @media (max-width: 991px) {
@@ -346,7 +358,7 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: $tex_medium;
   }
 
   .formulario {

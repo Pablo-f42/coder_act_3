@@ -31,3 +31,12 @@ $tex_medium: (
 $tex_small: (
     1.3rem
 );
+
+p {
+    font-family: $tex_nun;
+    font-size: $tex_medium;
+}
+
+h1 h2 h3 {
+    font-family: $tex_nun;
+}

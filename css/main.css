@@ -7,6 +7,15 @@ html {
   font-size: 62.5%;
 }
 
+p {
+  font-family: "nunito sans", sans-serif;
+  font-size: 1.7rem;
+}
+
+h1 h2 h3 {
+  font-family: "nunito sans", sans-serif;
+}
+
 .menu {
   background-color: #570000;
 }
@@ -61,7 +70,7 @@ html {
 }
 
 .hero-hist {
-  background-image: url(./img/historia.jpg);
+  background-image: url(../img/historia.jpg);
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +78,7 @@ html {
 }
 
 .hero-epi {
-  background-image: url(./img/historia.jpg);
+  background-image: url(../img/historia.jpg);
   height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +86,7 @@ html {
 }
 
 .hero-jgo {
-  background-image: url(./img/5.gif);
+  background-image: url(../img/5.gif);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +153,7 @@ html {
   font-family: "nunito sans", sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
-  color: #f3f3f3;
+  color: #252525;
   width: 500px;
   margin-bottom: 30px;
 }
@@ -166,11 +175,9 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 30px;
-  transform: scale(1);
   transition: background-color 0.5s ease-in-out;
 }
 .button:hover {
-  transform: scale(1.5);
   background-color: #11dd22;
 }
 .button:focus {
@@ -179,18 +186,28 @@ html {
 }
 
 .button-white {
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "nunito sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #f3f3f3;
+  border-color: #f3f3f3;
+  text-transform: uppercase;
+  text-decoration: none;
   width: 250px;
   height: 60px;
-  font-family: nunito sans, sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #efefef;
-  background-color: transparent;
-  border-color: #efefef;
   padding: 0;
   margin-top: 60px;
   border-radius: 30px;
+  transition: background-color 0.5s ease-in-out;
+}
+.button-white:hover {
+  background-color: #11dd22;
+}
+.button-white:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(87, 0, 0, 0.5);
 }
 
 @media (max-width: 991px) {
@@ -215,6 +232,7 @@ html {
 
 .title-ia {
   font-weight: 600;
+  font-size: 1.7rem;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -270,16 +288,16 @@ html {
 }
 
 .list-fotter {
-  font-family: nunito sans, sans-serif;
-  list-style-type: none;
+  font-family: "nunito sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  color: #efefef;
+  color: #f3f3f3;
+  list-style-type: none;
   padding-top: 30px;
 }
 
 .li-menu-r {
-  color: #efefef;
+  color: #f3f3f3;
   text-decoration: none;
 }
 
@@ -287,6 +305,7 @@ html {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 @media (max-width: 991px) {
@@ -340,7 +359,7 @@ textarea {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 1.7rem;
 }
 
 .formulario {
