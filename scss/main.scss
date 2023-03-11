@@ -36,10 +36,10 @@
 }
 
 .li-menu {
-    font-family: nunito sans, sans-serif;
+    font-family: $tex_nun;
+    font-weight: $tex_wei_bold;
+    font-size: $tex_small;
     list-style-type: none ;
-    font-size: 1.3rem;
-    font-weight: 600;
     color: #ffffff;
 }
 
