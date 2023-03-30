@@ -173,26 +173,7 @@
     }}
 
 .button {
-    background-color: $cta-button-bg;
-    cursor: pointer;
-    font-family: $tex_nun;
-    font-weight: $tex_wei_bold;
-    font-size: $tex_medium;
-    color: $cta-button-color;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.5s ease-in-out;
-  
-    &:hover {
-      background-color: $cta-button-hover;
-    }
-  
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px rgba($cta-button-bg, 0.5);
-    }
+    @include boton
   }
 
  .button-white {
